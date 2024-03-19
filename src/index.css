@@ -1,13 +1,149 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap");
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+body{
+    background-color: rgb(5, 23, 37);
+}
+.main{
+    margin: 0;
+    background-color: rgb(5, 23, 37);
+    overflow: hidden;
+    color: #fff;
+}
+.container{
+    text-align: center;
+    background-color: rgb(3, 8, 27);
+    padding: 20px 0 20px 0;
+    color: rgb(255, 0, 98);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.432);
+}
+/* .feedback-list{
+    
+    margin: 10px;
+} */
+
+/* .feedback-item{
+    
+} */
+.rating{
+    /* position: absolute; */
+    background-color: rgb(255, 0, 98);
+    text-align: center;
+    width: 50px;
+    padding: 15px;
+    border-radius: 50%;
+    color: #fff;
+    font-size: 15px;
+}
+.card{
+    background-color: rgb(209, 221, 217);
+    color: black;
+    border-radius: 20px;
+    padding: 30px 20px 20px 20px;
+    margin: 20px;
+    font-size: 16px;
+    border-bottom-right-radius: 20%;
+    border-top-left-radius: 20%;
+    text-align: center;
+}
+ul{
+    margin: 10px;
+}
+ul>li{
+    display: inline;
+    padding: 10px;
+
+}
+[type=radio]{
+    opacity: 0;
+}
+.label{
+    background-color: rgb(171, 212, 199);
+    padding: 8px 15px 8px 15px;
+    border-radius: 60%;
+    color: black;
+}
+.label:hover{
+    background-color: rgb(235, 232, 61);
+}
+[type="radio"]:checked ~ label {
+    background: rgb(235, 232, 61);
+}
+  
+.form-input{
+    margin: 20px;
+}
+input[type=text]{
+    width: 50%;
+    padding: 20px;
+    border: 0;
+    outline: none;
+    border-radius: 5px;
+}
+.btn{
+    margin-left: -80px;
+    padding: 10px 20px 10px 20px;
+    background-color: rgb(173, 170, 170);
+    color: black;
+    border: 0;
+    border-radius: 4px;
+}
+.btn-primary{
+    background-color: #337ab7;
+}
+.false{
+    opacity: .7;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.btn-success{
+    background-color: #449d44;
+}
+.rating-close-combine{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.close,.edit{
+    background-color: rgb(209, 221, 217);
+    border: 0;
+    margin-right: 5px;
+    cursor: pointer;
+}
+.div-stats{
+    display: flex;
+    justify-content: space-between;
+    margin: 20px;
+}
+.about-link{
+    margin: 10px;
+    text-align: right;
+}
+.fainfo{
+    color: #fff;
+}
+.fainfo:hover{
+    color: rgb(255, 0, 98);
+}
+.active{
+    background-color: rgb(5, 23, 37);
+    color: #fff;
+    margin: 10px;
+    padding: 10px;
+    text-decoration: none;
+    border-radius: 10px;
+}
+.nav-item{
+    color: #fff;
+    text-decoration: none;
+}
+.no-feedback{
+    text-align: center;
+    font-size: 20px;
+    color: rgb(255, 0, 98);
+    font-weight: bold;
 }
